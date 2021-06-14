@@ -5,6 +5,9 @@
 #include <QString>
 #include "httplistener.h"
 #include "httprequesthandler.h"
+#include "requestmapper.h"
+#include "global.h"
+#include "cookietestcontroller.h"
 
 using namespace stefanfrings;
 
@@ -56,8 +59,19 @@ int main(int argc, char *argv[])
     QSettings* listenerSettings=new QSettings(configFileName, QSettings::IniFormat, &app);
     listenerSettings->beginGroup("listener");
 
+    // Session store
+    QSettings* sessionSettings=new QSettings(configFileName,QSettings::IniFormat,&app);
+    sessionSettings->beginGroup("sessions");
+    sessionStore=new HttpSessionStore(sessionSettings,&app);
+
+    // Static file controller
+    QSettings* fileSettings=new QSettings(configFileName,QSettings::IniFormat,&app);
+    fileSettings->beginGroup("files");
+    staticFileController=new StaticFileController(fileSettings,&app);
+
+
     // Start the HTTP server
-    new HttpListener(listenerSettings, new HttpRequestHandler(&app), &app);
+    new HttpListener(listenerSettings,new RequestMapper(&app),&app);
 
     return app.exec();
 }
