@@ -59,6 +59,15 @@ int main(int argc, char *argv[])
     QSettings* listenerSettings=new QSettings(configFileName, QSettings::IniFormat, &app);
     listenerSettings->beginGroup("listener");
 
+    // Configure logging
+    QSettings* logSettings=new QSettings(configFileName,QSettings::IniFormat,&app);
+    logSettings->beginGroup("logging");
+    logger=new FileLogger(logSettings,10000,&app);
+    logger->installMsgHandler();
+
+    // Log the library version
+    qDebug("QtWebApp has version %s",getQtWebAppLibVersion());
+
     // Session store
     QSettings* sessionSettings=new QSettings(configFileName,QSettings::IniFormat,&app);
     sessionSettings->beginGroup("sessions");
@@ -69,6 +78,10 @@ int main(int argc, char *argv[])
     fileSettings->beginGroup("files");
     staticFileController=new StaticFileController(fileSettings,&app);
 
+    // Configure template cache
+    QSettings* templateSettings=new QSettings(configFileName,QSettings::IniFormat,&app);
+    templateSettings->beginGroup("templates");
+    templateCache=new TemplateCache(templateSettings,&app);
 
     // Start the HTTP server
     new HttpListener(listenerSettings,new RequestMapper(&app),&app);

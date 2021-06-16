@@ -10,6 +10,9 @@ RequestMapper::RequestMapper(QObject* parent)
 void RequestMapper::service(HttpRequest& request, HttpResponse& response) {
     QByteArray path=request.getPath();
     qDebug("RequestMapper: path=%s",path.data());
+    HttpSession session=sessionStore->getSession(request,response,false);
+    QString username=session.get("username").toString();
+    logger->set("currentUser",username);
 
     QByteArray sessionId=sessionStore->getSessionId(request,response);
     if (sessionId.isEmpty() && path!="/login") {
@@ -31,6 +34,9 @@ void RequestMapper::service(HttpRequest& request, HttpResponse& response) {
     else if (path=="/cookie") {
         CookieTestController.service(request, response);
     }
+    else if (path=="/list2") {
+        dataTemplateController.service(request, response);
+    }
     else if (path.startsWith("/files")) {
         staticFileController->service(request,response);
     }
@@ -40,4 +46,5 @@ void RequestMapper::service(HttpRequest& request, HttpResponse& response) {
     }
 
     qDebug("RequestMapper: finished request");
+    logger->clear(true,true);
 }

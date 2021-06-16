@@ -10,6 +10,7 @@ CONFIG -= app_bundle
 
 SOURCES += \
       src/cookietestcontroller.cpp \
+      src/datatemplatecontroller.cpp \
       src/global.cpp \
       src/helloworldcontroller.cpp \
       src/listdatacontroller.cpp \
@@ -25,8 +26,11 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 include(../QtWebApp/QtWebApp/httpserver/httpserver.pri)
 OTHER_FILES += etc/webapp1.ini
 
+include(../QtWebApp/QtWebApp/templateengine/templateengine.pri)
+include(../QtWebApp/QtWebApp/logging/logging.pri)
 HEADERS += \
     src/cookietestcontroller.h \
+    src/datatemplatecontroller.h \
     src/global.h \
     src/helloworldcontroller.h \
     src/listdatacontroller.h \

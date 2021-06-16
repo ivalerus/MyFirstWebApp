@@ -6,6 +6,7 @@
 #include "listdatacontroller.h"
 #include "logincontroller.h"
 #include "cookietestcontroller.h"
+#include "datatemplatecontroller.h"
 
 using namespace stefanfrings;
 
@@ -19,6 +20,7 @@ private:
     ListDataController listDataController;
     LoginController loginController;
     CookieTestController CookieTestController;
+    DataTemplateController dataTemplateController;
 };
 
 #endif // REQUESTMAPPER_H

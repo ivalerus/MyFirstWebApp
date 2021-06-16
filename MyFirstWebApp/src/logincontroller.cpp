@@ -36,6 +36,7 @@ void LoginController::service(HttpRequest &request, HttpResponse &response) {
         response.write("<form method='POST' action='/login'>");
         if (!username.isEmpty()) {
             response.write("No, that was wrong!<br><br>");
+            qCritical("Login failed!");
         }
         response.write("Please log in:<br>");
         response.write("Name:  <input type='text' name='username'><br>");
