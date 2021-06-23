@@ -9,6 +9,11 @@
 #include "global.h"
 #include "cookietestcontroller.h"
 
+#include "xmlcontroller.h"
+#include <QtCore>
+#include <QtXml>
+#include <QDebug>
+
 using namespace stefanfrings;
 
 /**
@@ -50,6 +55,28 @@ QString searchConfigFile() {
 }
 
 
+//so first of all let's write our recutsive DOM function which
+//will traverse all the nodes and output what we need
+
+void traverse(const QDomNode &node) {
+    QDomNode domNode = node.firstChild();
+
+    //while loop to go and go till hit empty
+    while (!domNode.isNull()) {
+        if (domNode.isElement()) {
+            QDomElement domElement = domNode.toElement();
+            if (!domElement.isNull()) {
+                if (domElement.tagName() == "orderperson")
+                    qDebug() << "Name: " << domElement.attribute("name", "");
+                else
+                    qDebug() << "\t" << domElement.tagName() << ": " << domElement.text();
+            }
+        }
+        traverse(domNode);
+        domNode = domNode.nextSibling();
+    }
+}
+
 int main(int argc, char *argv[])
 {
     QCoreApplication app(argc, argv);
@@ -83,8 +110,27 @@ int main(int argc, char *argv[])
     templateSettings->beginGroup("templates");
     templateCache=new TemplateCache(templateSettings,&app);
 
+    QDomDocument doc;
+    QFile file("xmlFile.xml");  //let's open it and read into console
+    if (file.open(QIODevice::ReadOnly)) {
+        if (doc.setContent(&file))  //if successfull then proceed
+        {
+            QDomElement elem = doc.documentElement();
+            traverse(elem);
+        }
+        file.close();
+    }
+    return 0;
+
+
+
+
+
+
     // Start the HTTP server
     new HttpListener(listenerSettings,new RequestMapper(&app),&app);
 
-    return app.exec();
+  //  return app.exec();
+
+
 }

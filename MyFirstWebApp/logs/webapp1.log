@@ -111,3 +111,112 @@
 15.06.2021 15:46:51.789 0 DEBUG    0x00003164 User:{currentUser} HttpConnectionHandler (0xfd91a0): disconnected
 15.06.2021 15:46:52.824 0 DEBUG    0x0000181c User:{currentUser} HttpConnectionHandler (0xfd8ea0): read timeout occured
 15.06.2021 15:46:52.824 0 DEBUG    0x0000181c User:{currentUser} HttpConnectionHandler (0xfd8ea0): disconnected
+21.06.2021 16:26:50.095 0 DEBUG    0x000026bc User:{currentUser} QtWebApp has version 1.8.3
+21.06.2021 16:26:50.095 0 DEBUG    0x000026bc User:{currentUser} HttpSessionStore: Sessions expire after 3600000 milliseconds
+21.06.2021 16:26:50.095 0 DEBUG    0x000026bc User:{currentUser} StaticFileController: docroot=C:/Users/Lenovo/Documents/qt/MyFirstWebApp/docroot, encoding=UTF-8, maxAge=90000
+21.06.2021 16:26:50.095 0 DEBUG    0x000026bc User:{currentUser} StaticFileController: cache timeout=60000, size=1000000
+21.06.2021 16:26:50.175 0 DEBUG    0x000026bc User:{currentUser} TemplateLoader: path=C:/Users/Lenovo/Documents/qt/MyFirstWebApp/docroot, codec=UTF-8
+21.06.2021 16:26:50.175 0 DEBUG    0x000026bc User:{currentUser} TemplateCache: timeout=60000, size=1000000
+21.06.2021 16:26:50.395 0 DEBUG    0x000026bc User:{currentUser} HttpListener: Listening on port 8080
+21.06.2021 16:26:57.590 0 DEBUG    0x000026bc User:{currentUser} HttpConnectionHandler (0x1009380): thread started
+21.06.2021 16:26:57.605 0 DEBUG    0x000026bc User:{currentUser} HttpConnectionHandler (0x1009380): constructed
+21.06.2021 16:26:57.622 0 DEBUG    0x000027fc User:{currentUser} HttpConnectionHandler (0x1009380): handle new connection
+21.06.2021 16:26:57.630 0 DEBUG    0x000026bc User:{currentUser} HttpConnectionHandler (0x1008de0): thread started
+21.06.2021 16:26:57.630 0 DEBUG    0x000026bc User:{currentUser} HttpConnectionHandler (0x1008de0): constructed
+21.06.2021 16:26:57.631 0 DEBUG    0x00003248 User:{currentUser} HttpConnectionHandler (0x1008de0): handle new connection
+21.06.2021 16:26:57.661 0 DEBUG    0x00003248 User:{currentUser} HttpRequest: from ::1: POST / HTTP/1.1
+21.06.2021 16:26:57.662 0 DEBUG    0x000027fc User:{currentUser} HttpConnectionHandler (0x1009380): disconnected
+21.06.2021 16:26:57.662 0 DEBUG    0x00003248 User:{currentUser} HttpConnectionHandler (0x1008de0): received request
+21.06.2021 16:26:57.663 0 DEBUG    0x00003248 User:{currentUser} RequestMapper: path=/
+21.06.2021 16:26:57.663 0 DEBUG    0x00003248 User: RequestMapper: redirect to login page
+21.06.2021 16:26:57.664 0 DEBUG    0x00003248 User: HttpConnectionHandler (0x1008de0): finished request
+21.06.2021 16:26:57.680 0 DEBUG    0x000027fc User:{currentUser} HttpConnectionHandler (0x1009380): handle new connection
+21.06.2021 16:26:57.691 0 DEBUG    0x000027fc User:{currentUser} HttpConnectionHandler (0x1009380): disconnected
+21.06.2021 16:26:57.691 0 DEBUG    0x000026bc User:{currentUser} HttpConnectionHandler (0x10093e0): thread started
+21.06.2021 16:26:57.691 0 DEBUG    0x000026bc User:{currentUser} HttpConnectionHandler (0x10093e0): constructed
+21.06.2021 16:26:57.693 0 DEBUG    0x000002d0 User:{currentUser} HttpConnectionHandler (0x10093e0): handle new connection
+21.06.2021 16:26:57.694 0 DEBUG    0x000002d0 User:{currentUser} HttpRequest: from ::1: GET /login HTTP/1.1
+21.06.2021 16:26:57.694 0 DEBUG    0x000002d0 User:{currentUser} HttpConnectionHandler (0x10093e0): received request
+21.06.2021 16:26:57.694 0 DEBUG    0x000002d0 User:{currentUser} RequestMapper: path=/login
+21.06.2021 16:26:57.718 0 DEBUG    0x000002d0 User: HttpSessionStore: create new session with ID {5da6f77f-5b67-45a6-beb6-663f943dc5b5}
+21.06.2021 16:26:57.718 0 DEBUG    0x000002d0 User: username=
+21.06.2021 16:26:57.718 0 DEBUG    0x000002d0 User: password=
+21.06.2021 16:26:57.718 0 DEBUG    0x000002d0 User: RequestMapper: finished request
+21.06.2021 16:26:57.719 0 DEBUG    0x000002d0 User:{currentUser} HttpConnectionHandler (0x10093e0): finished request
+21.06.2021 16:27:57.662 0 DEBUG    0x00003248 User: HttpConnectionHandler (0x1008de0): read timeout occured
+21.06.2021 16:27:57.663 0 DEBUG    0x00003248 User: HttpConnectionHandler (0x1008de0): disconnected
+21.06.2021 16:27:57.715 0 DEBUG    0x000002d0 User:{currentUser} HttpConnectionHandler (0x10093e0): read timeout occured
+21.06.2021 16:27:57.715 0 DEBUG    0x000002d0 User:{currentUser} HttpConnectionHandler (0x10093e0): disconnected
+21.06.2021 16:28:06.985 0 DEBUG    0x000027fc User:{currentUser} HttpConnectionHandler (0x1009380): handle new connection
+21.06.2021 16:28:06.986 0 DEBUG    0x00003248 User: HttpConnectionHandler (0x1008de0): handle new connection
+21.06.2021 16:28:07.034 0 DEBUG    0x00003248 User: HttpRequest: from ::1: GET / HTTP/1.1
+21.06.2021 16:28:07.034 0 DEBUG    0x00003248 User: HttpConnectionHandler (0x1008de0): received request
+21.06.2021 16:28:07.034 0 DEBUG    0x00003248 User: RequestMapper: path=/
+21.06.2021 16:28:07.034 0 DEBUG    0x00003248 User: RequestMapper: redirect to login page
+21.06.2021 16:28:07.035 0 DEBUG    0x00003248 User: HttpConnectionHandler (0x1008de0): finished request
+21.06.2021 16:28:07.080 0 DEBUG    0x00003248 User: HttpRequest: from ::1: GET /login HTTP/1.1
+21.06.2021 16:28:07.081 0 DEBUG    0x00003248 User: HttpConnectionHandler (0x1008de0): received request
+21.06.2021 16:28:07.081 0 DEBUG    0x00003248 User: RequestMapper: path=/login
+21.06.2021 16:28:07.081 0 DEBUG    0x00003248 User: HttpSessionStore: create new session with ID {aa1f5612-8c98-40f9-bb9c-cfff8784db18}
+21.06.2021 16:28:07.081 0 DEBUG    0x00003248 User: username=
+21.06.2021 16:28:07.081 0 DEBUG    0x00003248 User: password=
+21.06.2021 16:28:07.081 0 DEBUG    0x00003248 User: RequestMapper: finished request
+21.06.2021 16:28:07.081 0 DEBUG    0x00003248 User:{currentUser} HttpConnectionHandler (0x1008de0): finished request
+21.06.2021 16:28:07.804 0 DEBUG    0x00003248 User:{currentUser} HttpRequest: from ::1: GET /favicon.ico HTTP/1.1
+21.06.2021 16:28:07.805 0 DEBUG    0x00003248 User:{currentUser} HttpConnectionHandler (0x1008de0): received request
+21.06.2021 16:28:07.805 0 DEBUG    0x00003248 User:{currentUser} RequestMapper: path=/favicon.ico
+21.06.2021 16:28:07.805 0 DEBUG    0x00003248 User: RequestMapper: finished request
+21.06.2021 16:28:07.805 0 DEBUG    0x00003248 User:{currentUser} HttpConnectionHandler (0x1008de0): finished request
+21.06.2021 16:28:12.686 0 DEBUG    0x00003248 User:{currentUser} HttpRequest: from ::1: POST /login HTTP/1.1
+21.06.2021 16:28:12.686 0 DEBUG    0x00003248 User:{currentUser} HttpConnectionHandler (0x1008de0): received request
+21.06.2021 16:28:12.686 0 DEBUG    0x00003248 User:{currentUser} RequestMapper: path=/login
+21.06.2021 16:28:12.686 0 DEBUG    0x00003248 User: username=test
+21.06.2021 16:28:12.686 0 DEBUG    0x00003248 User: password=hello
+21.06.2021 16:28:12.687 0 DEBUG    0x00003248 User: RequestMapper: finished request
+21.06.2021 16:28:12.687 0 DEBUG    0x00003248 User:{currentUser} HttpConnectionHandler (0x1008de0): finished request
+21.06.2021 16:28:18.749 0 DEBUG    0x00003248 User:{currentUser} HttpRequest: from ::1: GET / HTTP/1.1
+21.06.2021 16:28:18.749 0 DEBUG    0x00003248 User:{currentUser} HttpConnectionHandler (0x1008de0): received request
+21.06.2021 16:28:18.749 0 DEBUG    0x00003248 User:{currentUser} RequestMapper: path=/
+21.06.2021 16:28:18.750 0 DEBUG    0x00003248 User:test RequestMapper: finished request
+21.06.2021 16:28:18.750 0 DEBUG    0x00003248 User:{currentUser} HttpConnectionHandler (0x1008de0): finished request
+21.06.2021 16:28:23.679 0 DEBUG    0x000002d0 User:{currentUser} HttpConnectionHandler (0x10093e0): handle new connection
+21.06.2021 16:28:23.682 0 DEBUG    0x000002d0 User:{currentUser} HttpConnectionHandler (0x10093e0): disconnected
+21.06.2021 16:28:23.682 0 DEBUG    0x000026bc User:{currentUser} HttpConnectionHandler (0x26477b0): thread started
+21.06.2021 16:28:23.682 0 DEBUG    0x000026bc User:{currentUser} HttpConnectionHandler (0x26477b0): constructed
+21.06.2021 16:28:23.685 0 DEBUG    0x00001ed0 User:{currentUser} HttpConnectionHandler (0x26477b0): handle new connection
+21.06.2021 16:28:23.687 0 DEBUG    0x00001ed0 User:{currentUser} HttpRequest: from ::1: POST / HTTP/1.1
+21.06.2021 16:28:23.687 0 DEBUG    0x00001ed0 User:{currentUser} HttpConnectionHandler (0x26477b0): received request
+21.06.2021 16:28:23.687 0 DEBUG    0x00001ed0 User:{currentUser} RequestMapper: path=/
+21.06.2021 16:28:23.688 0 DEBUG    0x00001ed0 User: RequestMapper: finished request
+21.06.2021 16:28:23.688 0 DEBUG    0x00001ed0 User:{currentUser} HttpConnectionHandler (0x26477b0): finished request
+21.06.2021 16:29:06.976 0 DEBUG    0x000027fc User:{currentUser} HttpConnectionHandler (0x1009380): read timeout occured
+21.06.2021 16:29:06.976 0 DEBUG    0x000027fc User:{currentUser} HttpConnectionHandler (0x1009380): disconnected
+21.06.2021 16:29:18.739 0 DEBUG    0x00003248 User:{currentUser} HttpConnectionHandler (0x1008de0): read timeout occured
+21.06.2021 16:29:18.739 0 DEBUG    0x00003248 User:{currentUser} HttpConnectionHandler (0x1008de0): disconnected
+21.06.2021 16:29:23.676 0 DEBUG    0x00001ed0 User:{currentUser} HttpConnectionHandler (0x26477b0): read timeout occured
+21.06.2021 16:29:23.676 0 DEBUG    0x00001ed0 User:{currentUser} HttpConnectionHandler (0x26477b0): disconnected
+21.06.2021 16:36:32.105 0 DEBUG    0x000027fc User:{currentUser} HttpConnectionHandler (0x1009380): handle new connection
+21.06.2021 16:36:32.112 0 DEBUG    0x00003248 User:{currentUser} HttpConnectionHandler (0x1008de0): handle new connection
+21.06.2021 16:36:32.112 0 DEBUG    0x000027fc User:{currentUser} HttpConnectionHandler (0x1009380): disconnected
+21.06.2021 16:36:32.114 0 DEBUG    0x00003248 User:{currentUser} HttpRequest: from ::1: GET / HTTP/1.1
+21.06.2021 16:36:32.114 0 DEBUG    0x00003248 User:{currentUser} HttpConnectionHandler (0x1008de0): received request
+21.06.2021 16:36:32.114 0 DEBUG    0x00003248 User:{currentUser} RequestMapper: path=/
+21.06.2021 16:36:32.115 0 DEBUG    0x00003248 User: RequestMapper: finished request
+21.06.2021 16:36:32.115 0 DEBUG    0x00003248 User:{currentUser} HttpConnectionHandler (0x1008de0): finished request
+21.06.2021 16:36:51.330 0 DEBUG    0x000027fc User:{currentUser} HttpConnectionHandler (0x1009380): handle new connection
+21.06.2021 16:36:51.333 0 DEBUG    0x000002d0 User:{currentUser} HttpConnectionHandler (0x10093e0): handle new connection
+21.06.2021 16:36:51.351 0 DEBUG    0x000002d0 User:{currentUser} HttpRequest: from ::1: GET / HTTP/1.1
+21.06.2021 16:36:51.351 0 DEBUG    0x000002d0 User:{currentUser} HttpConnectionHandler (0x10093e0): received request
+21.06.2021 16:36:51.351 0 DEBUG    0x000002d0 User:{currentUser} RequestMapper: path=/
+21.06.2021 16:36:51.352 0 DEBUG    0x000002d0 User:test RequestMapper: finished request
+21.06.2021 16:36:51.352 0 DEBUG    0x000002d0 User:{currentUser} HttpConnectionHandler (0x10093e0): finished request
+21.06.2021 16:37:32.115 0 DEBUG    0x00003248 User:{currentUser} HttpConnectionHandler (0x1008de0): read timeout occured
+21.06.2021 16:37:32.115 0 DEBUG    0x00003248 User:{currentUser} HttpConnectionHandler (0x1008de0): disconnected
+21.06.2021 16:37:51.341 0 DEBUG    0x000027fc User:{currentUser} HttpConnectionHandler (0x1009380): read timeout occured
+21.06.2021 16:37:51.341 0 DEBUG    0x000027fc User:{currentUser} HttpConnectionHandler (0x1009380): disconnected
+21.06.2021 16:37:51.351 0 DEBUG    0x000002d0 User:{currentUser} HttpConnectionHandler (0x10093e0): read timeout occured
+21.06.2021 16:37:51.351 0 DEBUG    0x000002d0 User:{currentUser} HttpConnectionHandler (0x10093e0): disconnected
+21.06.2021 17:36:50.114 0 DEBUG    0x000026bc User:{currentUser} HttpSessionStore: session {5da6f77f-5b67-45a6-beb6-663f943dc5b5} expired
+21.06.2021 17:36:50.114 0 DEBUG    0x000026bc User:{currentUser} HttpSession: deleting data
+21.06.2021 17:37:50.112 0 DEBUG    0x000026bc User:{currentUser} HttpSessionStore: session {aa1f5612-8c98-40f9-bb9c-cfff8784db18} expired
+21.06.2021 17:37:50.112 0 DEBUG    0x000026bc User:{currentUser} HttpSession: deleting data

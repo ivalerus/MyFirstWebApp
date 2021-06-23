@@ -1,5 +1,6 @@
 QT -= gui
 QT += network
+QT += xml
 
 CONFIG += c++11 console
 CONFIG -= app_bundle
@@ -16,7 +17,8 @@ SOURCES += \
       src/listdatacontroller.cpp \
       src/logincontroller.cpp \
       src/main.cpp \
-      src/requestmapper.cpp
+      src/requestmapper.cpp \
+      src/xmlcontroller.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -28,6 +30,7 @@ OTHER_FILES += etc/webapp1.ini
 
 include(../QtWebApp/QtWebApp/templateengine/templateengine.pri)
 include(../QtWebApp/QtWebApp/logging/logging.pri)
+
 HEADERS += \
     src/cookietestcontroller.h \
     src/datatemplatecontroller.h \
@@ -35,4 +38,5 @@ HEADERS += \
     src/helloworldcontroller.h \
     src/listdatacontroller.h \
     src/logincontroller.h \
-    src/requestmapper.h
+    src/requestmapper.h \
+    src/xmlcontroller.h
